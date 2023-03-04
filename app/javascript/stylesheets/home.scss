@@ -1,0 +1,23 @@
+.jumbotron{
+background-image: url('../images/sukiyaki_top.jpg');
+background-size: cover;
+width: 100%;
+height: 70vh;
+background-position: center;
+
+
+.home-index{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.0rem;
+  }
+}
+}

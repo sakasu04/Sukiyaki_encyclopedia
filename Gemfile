@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'mini_magick'
 gem 'sorcery'
 gem 'uglifier'
 

@@ -1,0 +1,19 @@
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <h1 class="text-center mb-5">具材</h1>
+      <div class="card">
+        <div class="card-header">
+          <h2><%= @ingredient_post.body %></h2>
+        </div>
+        <div class="card-body">
+          <%= image_tag @ingredient_post.image, class: "card-img-top mb-3" if @ingredient_post.image.attached? %>
+          <p class="card-text"><%= @ingredient_post.user.name %></p>
+        </div>
+        <div class="card-footer text-muted">
+          <%= @ingredient_post.created_at.strftime("%Y/%m/%d %H:%M") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

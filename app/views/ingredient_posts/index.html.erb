@@ -1,0 +1,24 @@
+<h1 class="text-center mb-5">具材一覧</h1>
+<div class="text-center">
+  <%= link_to '具材を投稿する', new_ingredient_post_path, class: 'btn btn-primary' %>
+</div>
+
+<div class="container pt-3">
+  <% @ingredient_posts.each_slice(3) do |posts| %>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <% posts.each do |ingredient| %>
+        <div class="col mb-4">
+          <div class="card h-100">
+              <%= image_tag ingredient.image, class: "card-img-top" if ingredient.image.attached? %>
+              <div class="card-body">
+                <%= link_to ingredient_post_path(ingredient), class: "card-link" do %>
+                  <h5 class="card-title"><%= ingredient.body %></h5>
+                <% end %>
+                <p class="card-text"><%= ingredient.user.name %></p>
+              </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

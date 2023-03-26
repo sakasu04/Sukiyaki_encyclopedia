@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :users, only: %i[new create]
   resource :profile, only: %i[show edit update]
+  resources :ingredient_posts, only: %i[index new create show]
 
   #get 'password_resets/new'
   #get 'password_resets/create'

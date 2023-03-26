@@ -1,11 +1,13 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import './home.scss';
 
+body {
+  background-color: #844454;
+}
+
 .full-page {
   width: 100vw;
   height: 100vh;
-
-  background: #844454;
 }
 
 .btn-primary {
